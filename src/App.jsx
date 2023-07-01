@@ -25,10 +25,9 @@ function App() {
       </div>
       {showReport && (
         <div className="reports">
-          Reports
-          <br />
+          <div className="report">Reports</div>
           {nums.map((num) => (
-            <div key={num.id}>
+            <div className="report-box" key={num.id}>
               Card {num.value} has been unmounted {num.unmountCount} times
             </div>
           ))}

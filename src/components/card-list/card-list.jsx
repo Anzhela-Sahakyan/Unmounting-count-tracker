@@ -35,7 +35,11 @@ export default function CardList({ nums, setNums }) {
             setIsMounted={setIsMounted}
           />
         ) : (
-          <div onClick={() => setIsMounted(num.id, true)} key={num.id}>
+          <div
+            className={styles.showText}
+            onClick={() => setIsMounted(num.id, true)}
+            key={num.id}
+          >
             Show
           </div>
         )
